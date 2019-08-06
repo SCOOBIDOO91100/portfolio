@@ -1,10 +1,9 @@
 const mongoose = require ("mongoose");
 
-//a corriger
-const nabiloSchema = mongoose.Schema({
-    titre_2: String,
+const contactSchema = mongoose.Schema({
+    titre: String,
 });
 
-const Projecto = mongoose.model("projecto", nabiloSchema );
+const Contact = mongoose.model("contact", contactSchema );
 
-module.exports = Projecto
+module.exports = Contact
